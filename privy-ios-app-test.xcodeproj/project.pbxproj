@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		95F39A2D2D18ACE900CD083D /* Privy in Frameworks */ = {isa = PBXBuildFile; productRef = 95F39A2C2D18ACE900CD083D /* Privy */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		95F39A0A2D18AC5400CD083D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95F39A2D2D18ACE900CD083D /* Privy in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = "privy-ios-app-test";
 			packageProductDependencies = (
+				95F39A2C2D18ACE900CD083D /* Privy */,
 			);
 			productName = "privy-ios-app-test";
 			productReference = 95F399F82D18AC5300CD083D /* privy-ios-app-test.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 95F399EF2D18AC5300CD083D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				95F39A2B2D18ACE900CD083D /* XCRemoteSwiftPackageReference "privy-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 95F399F92D18AC5300CD083D /* Products */;
 			projectDirPath = "";
@@ -389,9 +398,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "privy-ios-app-test/privy_ios_app_test.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"privy-ios-app-test/Preview Content\"";
+				DEVELOPMENT_TEAM = VRM7549J6M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -411,6 +422,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "privyte.privy.privy-ios-app-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -426,9 +438,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "privy-ios-app-test/privy_ios_app_test.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"privy-ios-app-test/Preview Content\"";
+				DEVELOPMENT_TEAM = VRM7549J6M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -448,6 +462,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "privyte.privy.privy-ios-app-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -583,6 +598,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		95F39A2B2D18ACE900CD083D /* XCRemoteSwiftPackageReference "privy-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/privy-io/privy-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		95F39A2C2D18ACE900CD083D /* Privy */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95F39A2B2D18ACE900CD083D /* XCRemoteSwiftPackageReference "privy-ios" */;
+			productName = Privy;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 95F399F02D18AC5300CD083D /* Project object */;
 }

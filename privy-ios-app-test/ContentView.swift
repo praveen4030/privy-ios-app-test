@@ -1,24 +1,35 @@
-//
-//  ContentView.swift
-//  privy-ios-app-test
-//
-//  Created by Praveen Agrawal on 23/12/24.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showPrivyViewController = false
+
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
+            
             Text("Hello, world!")
+
+            Button(action: { showPrivyViewController = true }) {
+                Text("Open Privy Page")
+                    .padding()
+                    .foregroundColor(.white)
+                    .background(Color.blue)
+                    .cornerRadius(8)
+            }
+            .sheet(isPresented: $showPrivyViewController) {
+                // Present the UIKit view controller using the SwiftUI representable
+                PrivyViewControllerRepresentable()
+                    .edgesIgnoringSafeArea(.all)
+            }
         }
         .padding()
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
